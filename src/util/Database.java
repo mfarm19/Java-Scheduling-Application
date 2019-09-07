@@ -8,12 +8,13 @@ import java.sql.SQLException;
  *
  * @author Michael Farmer
  */
+
+//Username, Password, and DB URL removed
 public class Database {
-    
-    private static final String DB_NAME = "U05zWv";
-    private static final String DB_URL = "jdbc:mysql://52.206.157.109/" + DB_NAME;
-    private static final String USERNAME = "U05zWv";
-    private static final String PASSWORD = "53688655285";
+    private static final String DB_NAME = "---";
+    private static final String DB_URL = "---" + DB_NAME;
+    private static final String USERNAME = "---";
+    private static final String PASSWORD = "---";
     private static final String DRIVER = "com.mysql.jdbc.Driver"; 
     private static Connection conn;
     
