@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AppointmentAddController">
+   <children>
+      <Label layoutX="410" layoutY="20" text="Add Appointment">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="350" layoutY="90" text="Customer" />
+        <TextField fx:id="customerName" editable="false" layoutX="470" layoutY="80" />
+      <Label layoutX="380" layoutY="140" text="Date" />
+        <DatePicker fx:id="date" layoutX="460" layoutY="140" />
+      <Label layoutX="380" layoutY="210" text="Time" />
+        <ComboBox fx:id="time" layoutX="460" layoutY="210" prefWidth="150.0" />
+      <Label layoutX="290" layoutY="260" text="Contact" />
+        <ComboBox fx:id="contact" layoutX="350" layoutY="260" onAction="#handleLocation" prefWidth="150.0" />
+      <Label layoutX="540" layoutY="260" text="Location" />
+        <TextField fx:id="location" editable="false" layoutX="600" layoutY="260" />
+      <Label layoutX="320" layoutY="310" text="Appointment Type" />
+        <ComboBox fx:id="type" layoutX="440" layoutY="310" prefHeight="25.0" prefWidth="213.0" />
+   </children>
+</AnchorPane>

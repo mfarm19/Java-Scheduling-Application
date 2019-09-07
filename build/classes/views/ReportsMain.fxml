@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500" prefWidth="1000" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ReportsMainController">
+   <children>
+      <Label layoutX="460" layoutY="15" text="Reports">
+         <font>
+            <Font size="24" />
+         </font>
+      </Label>
+      <TabPane layoutX="100" layoutY="60" prefHeight="370" prefWidth="780" style="-fx-border-color: #000000;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Appointment Type By Month">
+            <content>
+              <AnchorPane minHeight="0" minWidth="0" prefHeight="290" prefWidth="770">
+                     <children>
+                        <TextArea fx:id="reportOne" editable="false" layoutX="10" layoutY="50" prefHeight="280" prefWidth="750" />
+                        <Label layoutX="170" layoutY="15" text="Appointment Type By Month">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Consultant Schedules">
+            <content>
+              <AnchorPane minHeight="0" minWidth="0" prefHeight="350" prefWidth="770">
+                     <children>
+                        <TextArea fx:id="reportTwo" editable="false" layoutX="10" layoutY="50" prefHeight="280" prefWidth="750" />
+                        <Label layoutX="200" layoutY="15" text="Consultant Schedules">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Customer Total Appoinments">
+               <content>
+                  <AnchorPane minHeight="0" minWidth="0" prefHeight="350" prefWidth="770">
+                     <children>
+                        <Label layoutX="170" layoutY="15" text="Total Customer Appoinments">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="reportThree" layoutX="12" layoutY="50" prefHeight="280" prefWidth="750" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="730" layoutY="440" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+   </children>
+</AnchorPane>

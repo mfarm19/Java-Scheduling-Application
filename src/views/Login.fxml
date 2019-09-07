@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LoginController">
+    <children>
+        <Label fx:id="label" layoutX="125" layoutY="120" minHeight="15" minWidth="70" />
+      <Label layoutX="300" layoutY="50" text="C195 Scheduling Application">
+         <font>
+            <Font size="30" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="330" layoutY="140" />
+      <TextField fx:id="usernameTxt" layoutX="400" layoutY="135" />
+      <Label fx:id="passwordLabel" layoutX="330" layoutY="220" />
+      <PasswordField fx:id="passwordTxt" layoutX="400" layoutY="215" />
+      <Button fx:id="loginButton" layoutX="450" layoutY="270" mnemonicParsing="false" onAction="#handleLogin" />
+      <AnchorPane fx:id="errorPane" layoutX="275" layoutY="325" prefHeight="150" prefWidth="400" style="-fx-border-color: #000000;">
+         <children>
+            <Label fx:id="mainMessage" layoutX="15" layoutY="50">
+               <font>
+                  <Font size="20" />
+               </font>
+            </Label>
+            <Label fx:id="languageMessage" layoutX="15" layoutY="120" />
+         </children>
+      </AnchorPane>
+      
+    </children>
+</AnchorPane>
